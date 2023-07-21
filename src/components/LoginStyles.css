@@ -1,0 +1,76 @@
+.loginPage{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    /* background-color: #c8ccec; */
+    background-color: #9fb2d2;
+    /* background-color: #b3b8dd; */
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+ 
+}
+.msg{
+    text-align: center;
+    align-items: center;
+   padding: 50px;
+   color: white;
+   line-height: 2;
+   position: relative;
+
+}
+.msg p{
+    font-size: large;
+}
+
+.authContainer{
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 25%;
+    width: 50%;
+    height: 30vh;
+    
+    /* margin: 10% auto; */
+    background: #87a3d5;
+    /* background: #8d96dd; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding:2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.userlogin{
+    background-color:white;
+    color:#7895CB;
+    padding: .75rem 1.75rem;
+    border-radius: .75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: #7895CB 2px solid;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+.userlogin:hover{
+    background-color:  #9fb2d2;
+    color: white;
+}
+
+.authContainer h1{
+    background-color:#87a3d5;
+    color: white;
+
+}
+.authContainer input{
+    background-color: white;
+    padding: 5px;
+    border-radius: .2rem;
+    border: none;
+    
+}

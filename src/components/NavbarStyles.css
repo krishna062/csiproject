@@ -1,0 +1,144 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap'); */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    color: #7286D3;
+}
+
+.main-nav{
+    width: 100%;
+    height: 15vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 3rem;
+
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* margin-left: 2rem; */
+    text-transform: uppercase;
+    
+
+}
+.logo a{
+color: #4A55A2;
+font-family: 'Moirai One', cursive;
+}
+.logo span{
+    font-family: 'Moirai One', cursive;
+    font-size: 3.5rem;
+}
+
+/* .nav-menu{
+   color:black ;
+} */
+
+.nav-links {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-links li{
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-links li{
+    /* color: #4A55A2; */
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  
+}
+.nav-links li:hover{
+    /* color: #8ba597; */
+    color: #4A55A2;
+}
+
+
+.btns ul{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    align-items: center;
+    
+}
+
+/* .login{
+    background-color:white;
+    color:#7895CB;
+    padding: .75rem 1.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: #7895CB 2px solid;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+.login:hover{
+    background-color: rgb(188, 197, 188);
+    border: white 2px solid;
+}
+
+.signup{
+    background-color:#7895CB;
+    color:white;
+    padding: .75rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: #7895CB 2px solid;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+
+}
+.signup:hover{
+
+    background-color: #4A55A2;
+
+    border: white 2px solid;
+} */
+
+.logout{
+    background-color:white;
+    color:#7895CB;
+    padding: .75rem 1.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: #7895CB 2px solid;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+.logout:hover{
+    background-color: rgb(188, 197, 188);
+    border: white 2px solid;
+}
