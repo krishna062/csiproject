@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route,Routes, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Home from './components/Home';
+import SeeMore from './components/SeeMore';
 
 function App() {
   return (
@@ -22,6 +23,15 @@ function App() {
                <Home/>
              </PrivateRoute> 
           } />
+
+
+        <Route path="/blog/:id"
+           element={ 
+             <PrivateRoute>
+               <SeeMore/>
+             </PrivateRoute> 
+          } />
+
      </Routes>
   </BrowserRouter>
   </>

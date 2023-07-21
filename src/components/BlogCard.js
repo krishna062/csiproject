@@ -1,13 +1,18 @@
 import React from 'react'
 import {useState} from 'react'
+// import{useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const BlogCard = ({
+    // blog
 
-    catagory,
+    id,
+    category,
     title,
     content,
     date    
 }) => {
+    // const {category,title,content,date}=blog;
     const[likes,setLikes]=useState(5);
     const[isLiked,setIsLiked]=useState(false);
 
@@ -30,17 +35,23 @@ const BlogCard = ({
         setComments([...comments,comment]);
     }
 
+    // const history=useHistory();
+
+    // const handleSeeMore=()=>{
+    //     history.push(`/blog/${id}`);
+    // };
+
   return (
     <div className='blogCard'>
-        <h1>{catagory}</h1>
+        <h1>{category}</h1>
         <h2>{title}</h2>
         <p>{content}</p>
         <p>{date}</p>
         <p>{likes}</p>
         <button onClick={handleLike}>{isLiked ? 'Unlike' : 'Like'}</button>
         <button onClick={handlecomment}>comment</button>
-        <button className='fullblog'>See More</button>
-        
+        {/* <button className='fullblog' onClick={handleSeeMore}>See More</button> */}
+        <button><Link to={`/blog/${id}`}>See More</Link></button>
     </div>
   )
 }

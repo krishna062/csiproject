@@ -8,7 +8,7 @@ const FilterBlogs = (props) => {
     // }
   return (
     <div className='filter-box'>
-        <select name="catagories" >
+        <select name="categories" >
             <option value="All">All</option>
             <option value="Technology">Technology</option>
             <option value="Fashion">Fashion</option>
