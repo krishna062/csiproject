@@ -1,0 +1,33 @@
+.create-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.create-post h1{
+    font-size: 1.5rem;
+    text-align: center;
+    /* margin-top: 20px; */
+    /* padding: 20px; */
+    /* font-weight: bold; */
+    color: #7895CB;
+    margin-bottom: 20px;
+}
+.title-input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.content-input{
+    padding: 20px;
+    /* box-sizing: border-box; */
+    /* margin-bottom: 10px; */
+    
+}
+

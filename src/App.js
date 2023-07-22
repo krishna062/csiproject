@@ -4,6 +4,8 @@ import { BrowserRouter, Route,Routes, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Home from './components/Home';
 import SeeMore from './components/SeeMore';
+import NewBlogs from './components/NewBlogs';
+import About from './components/About';
 
 function App() {
   return (
@@ -29,6 +31,18 @@ function App() {
            element={ 
              <PrivateRoute>
                <SeeMore/>
+             </PrivateRoute> 
+          } />
+           <Route path="/NewBlog"
+           element={ 
+             <PrivateRoute>
+               <NewBlogs/>
+             </PrivateRoute> 
+          } />
+           <Route path="/AboutUs"
+           element={ 
+             <PrivateRoute>
+               <About/>
              </PrivateRoute> 
           } />
 

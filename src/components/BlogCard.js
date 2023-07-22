@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 // import{useHistory} from 'react-router-dom'
 import {Link} from 'react-router-dom'
+import './BlogCard.css'
 
 const BlogCard = ({
     // blog
@@ -46,12 +47,14 @@ const BlogCard = ({
         <h1>{category}</h1>
         <h2>{title}</h2>
         <p>{content}</p>
-        <p>{date}</p>
-        <p>{likes}</p>
-        <button onClick={handleLike}>{isLiked ? 'Unlike' : 'Like'}</button>
-        <button onClick={handlecomment}>comment</button>
+        <p className='date'>{date}</p>
+        <div className='options'>
+            <p>❤ {likes}</p>
+        <button onClick={handleLike} className='likebtn'>{isLiked ? 'Unlike 👎' : ' Like 👍 '} </button>
+        <button onClick={handlecomment}>Comment</button>
         {/* <button className='fullblog' onClick={handleSeeMore}>See More</button> */}
         <button><Link to={`/blog/${id}`}>See More</Link></button>
+        </div>
     </div>
   )
 }
