@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# This is a simple react blog website
+This project is a part of my Celebal Summer Internship.
+
+## Deploy link:
+open in desktop only
+()
+
+## To Login Use one of the following credentials:
+mail:"admin1@gmail.com",
+password:"1234"
+
+ mail:"admin2@gmail.com",
+password:"4321"
+
+ mail:"admin3@gmail.com",
+password:"5678"
+
+ mail:"admin4@gmail.com",
+password:"8765"
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +88,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

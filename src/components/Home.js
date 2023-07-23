@@ -3,11 +3,10 @@ import {useState} from 'react'
 import "./HomeStyles.css"
 import Navbar from './Navbar'
 import BlogCard from './BlogCard';
-// import SeeMore from './SeeMore';
-// import NewBlogs from './NewBlogs';
-// import FilterBlogs from './FilterBlogs';
 
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 
@@ -51,42 +50,50 @@ const Home = () => {
 
   ]
 
-  const[blogs,setBlogs]=useState([...initialBlogs
-
- 
-]);
-
-
-
-
-
+  const[blogs,setBlogs]=useState([...initialBlogs ]);
 
 const [selectedCategory,setSelectedCategory]=useState("All");
-const [filteredBlogs,setFilteredBlogs]=useState([]);
+// const [filteredBlogs,setFilteredBlogs]=useState([]);
+const [searchValue,setSearchValue]=useState("");
 
 useEffect(()=>{
   const storedBlogs=JSON.parse(localStorage.getItem("blogs"));
   setBlogs(storedBlogs);
-},[])
+},[]);
 useEffect(()=>{
   localStorage.setItem("blogs",JSON.stringify(blogs));
-  // filtering based on selected catagory
-  const filtered= selectedCategory==="All" ? blogs : blogs.filter((blog)=>blog.category===selectedCategory);
-  setFilteredBlogs(filtered);
-},[blogs,selectedCategory]);
+},[blogs]);
+
+
+
+const handleSearchChange=(e)=>{
+  setSearchValue(e.target.value);
+};
+
+// 
 
 const handleCategoryChange=(e)=>{
   setSelectedCategory(e.target.value);
 };
 
-
+const filteredBlogs=blogs.filter((blog)=>{
+  const categoryMatch= selectedCategory==="All" || blog.category===selectedCategory;
+  const titleMatch= searchValue=== "" || blog.title.toLowerCase().includes(searchValue.toLowerCase());
+  return categoryMatch && titleMatch;
+})
 
   return (
     <>
     <Navbar/>
     
       <div className='search-box'>
-      <input type="text" placeholder='Search Blogs'className='search-input' name='search'></input>
+      <FontAwesomeIcon icon={faMagnifyingGlass} className='icon' />
+      <input type="text" placeholder='Search Blogs'className='search-input' name='search' 
+      value={searchValue}
+      onChange={handleSearchChange}
+      
+      />
+     
       </div>
 
       <div className='blog-posts'>

@@ -1,3 +1,9 @@
+.icon{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    /* background-color: white; */
+}
 .search-box{
 height: 30vh;
 display: flex;

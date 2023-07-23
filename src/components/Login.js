@@ -36,6 +36,9 @@ const Login = () => {
             localStorage?.setItem("authToken","dummyToken");
             navigate("/");
         }
+        else{
+            alert("Invalid Credentials");
+        }
     }
     
     const handleChange=(e)=>{

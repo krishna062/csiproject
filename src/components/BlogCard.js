@@ -4,6 +4,7 @@ import {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './BlogCard.css'
 
+
 const BlogCard = ({
     // blog
 
@@ -13,7 +14,7 @@ const BlogCard = ({
     content,
     date    
 }) => {
-    // const {category,title,content,date}=blog;
+    
     const[likes,setLikes]=useState(5);
     const[isLiked,setIsLiked]=useState(false);
 
@@ -34,6 +35,9 @@ const BlogCard = ({
     const handlecomment=()=>{
         const comment=prompt("Enter your comment");
         setComments([...comments,comment]);
+        
+        
+        
     }
 
     // const history=useHistory();
