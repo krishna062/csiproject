@@ -4,7 +4,7 @@ This project is a part of my Celebal Summer Internship.
 ## Deploy link:
 Open in desktop only
 
-()
+(https://blogwebsite-krishna-jangir.netlify.app)
 
 ## To Login Use one of the following credentials:
 mail:"admin1@gmail.com",
