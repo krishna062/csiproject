@@ -2,7 +2,8 @@
 This project is a part of my Celebal Summer Internship.
 
 ## Deploy link:
-open in desktop only
+Open in desktop only
+
 ()
 
 ## To Login Use one of the following credentials:
